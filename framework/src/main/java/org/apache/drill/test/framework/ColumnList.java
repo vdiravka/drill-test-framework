@@ -168,7 +168,7 @@ public class ColumnList {
           // otherwise proceed with "loosened" logic
           if (!d1.equals(d2)) {
             if ((d1 + d2) / 2 != 0) {
-              if (!(Math.abs((d1 - d2) / ((d1 + d2) / 2)) < 1.0E-12)) return false;
+              if (!(Math.abs((d1 - d2) / ((d1 + d2) / 2)) < 1.0E-11)) return false;
             } else if (d1 != 0) {
               return false;
             }
